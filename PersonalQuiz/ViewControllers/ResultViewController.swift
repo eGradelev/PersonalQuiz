@@ -8,11 +8,16 @@
 import UIKit
 
 final class ResultViewController: UIViewController {
-
+    var answerChosen: [Answer]!
+    
+    
+    @IBOutlet var animalResult: UILabel!
+    
+    @IBOutlet var animalDescription: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setHidesBackButton(true, animated: true)
-
     }
     
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
